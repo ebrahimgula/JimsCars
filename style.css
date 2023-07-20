@@ -1,0 +1,242 @@
+
+body{
+background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin-left: 1cm;
+}
+
+.topcontainer{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	letter-spacing: 6px;
+	font-family: Verdana;
+	font-weight: 900;
+}
+
+ul.nav {
+    padding:0;
+    list-style:none;
+    height:36px; line-height:36px;
+    background:#13293d;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+ul.nav li {
+    border-right:1px solid #18435A; 
+    float:left;
+}
+ul.nav a {
+    display:block;
+    padding:0 28px;
+    color:#ccece6;
+    text-decoration:none;
+}
+ul.nav a:hover,
+ul.nav li.current a {
+    background:#18435A;
+}
+.navigationcontainer{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.sccontainer{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	text-shadow: 2px 1px black;
+}
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+#main h2{
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+#main-header{
+	background-color: # ;
+	color: #FFFFFF;
+}
+#navbar{
+	background-color: #3A445D;
+	color: #fff;
+	text-align: left;
+	height: 55px;
+}
+#navbar ul{
+	padding: 0;
+	list-style: none;
+}
+#navbar li{ 
+	display: inline;
+}
+#navbar a{
+	color: #fff;
+	text-decoration: none;
+	padding-right: 15px;
+}
+/* Creates a header with a background image for the Index page */
+#showcase{
+	background-image: url("images/header.jpg");
+	background-position: center;
+	min-height: 300px;
+	margin-bottom: 1px;
+	text-align: center;
+	min-width: 300px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/* Formatting for the paragraph on top of the image in header */
+#showcase h2{
+	color: #fff;
+	font-size: 40px;
+	line-height: 1.6em;
+	padding-top: 30px;
+}
+#servicessidebar{
+	float:right;
+	width: 40%;
+	background: blue;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#main{
+	float: left;
+	width: 100%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#main2{
+	float: left;
+	width: 100%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#imagepositioning1{
+	position: relative;
+	width: 40%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#imagepositioning2{
+	position: relative;
+	width: 40%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#imagepositioningab2{
+	position: relative;
+	left: 100px;
+	width: 40%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#imagepositioning3{
+	position: relative;
+	width: 40%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#imagepositioning4{
+	position: relative;
+	width: 40%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+#imagepositioning5{
+	position: relative;
+	width: 40%;
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+.listing{
+	position: absolute;
+	top: 800px;
+	left: 40%;
+	width: 50%;
+}
+.listing li{
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.listing ul{
+	float: left;
+	margin-top: 25 px;
+	line-height: 1.2;
+}
+/* Grey bar with right sided text and padding margins for the copywrite footer */
+#main-footer{
+	background: #333;
+	color: #fff;
+	text-align: right;
+	padding: 20px;
+	margin-top: 40px;
+	float;
+}
+/* Creates a header with a background image for the Contact page */
+#contactshowcase{
+	background-image: url("images/contact.jpg");
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+} /* Creates a header with a background image for the Listing page */
+#listingshowcase{
+	background-image: url("images/listing.jpg");
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+} 
+#privshowcase{
+	background-image: url("images/priv.jpg");
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+} 
+ /* Creates a header with a background image for the terms and conditions page */
+#tmshowcase{
+	background-image: url("images/tm.jpg");
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#aboutshowcase{
+	background-image: url("images/about.jpg");
+	background-position: center right;
+	min-height: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+/* centers text for form */
+#listingform{
+	text-align: center;
+}
+
+

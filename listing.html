@@ -1,0 +1,149 @@
+<!-- Listing.html | Author: Ebrahim Gulamali (c3264525) Date created: 26/10/21 -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+	<meta charset="UTF-8">
+	<title>Jim's Cars - List A Car (Form)</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+
+		let Category = document.getElementById("dropdown")
+	 //category required error msg	
+		function validateSelect(){
+
+			
+			if(category=="select"){										
+				alert("Please select a gender");					
+				return (false);										
+			}else{													
+				return (true);										
+			}
+		}
+//Full name required errorMsg
+		function validateText()
+		{
+		
+			let fullname = document.getElementById("fullname"), 
+				email = document.getElementById("Email"),
+				form = document.getElementById("form"),
+				errorMsg = document.getElementsByClass("error"); 
+
+				errorMsg[1].innerHTML = "slatt";
+				alert("First name cannot be empty.");
+
+			form.addEventListener("submit", ()=>{
+					e.preventDefault();
+			
+				if(fullname.value === ""){							
+				alert("First name cannot be empty.");						
+			})
+		
+  			
+
+		}
+	</script>
+</head>
+<body>
+	<header id="main-header">
+		<div class ="topcontainer">
+			<h1>Jim's Cars</h1>
+		</div>
+	</header>
+	<nav>
+		<div>	<!-- Menu bar with CSS -->
+	<ul class="nav">
+				<li><a class ="ex1" href="index.html">Home</a></li>
+				<li><a class ="ex2" href="about.html">About</a></li>
+				<li><a class ="ex2" href="listing.html">Listing Service</a></li>
+				<li><a class ="ex3" href="../xmldocs/evs.xml">Electric Vehicles</a></li>
+				<li><a class ="ex4" href="../xmldocs/lvs.xml">Luxury Vehicles</a></li>
+				<li><a class ="ex5" href="contact.html">Contact</a></li>
+				<li><a class ="ex2" href="termsandconditions.html">Terms and Conditions</a></li>
+				<li><a class ="ex2" href="privacy.html">Privacy</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section id="listingshowcase">
+		<div class="sccontainer">
+			<br><br><br><br>
+			<h1> Welcome to Jim's Car Listing service! Here you can list your vehicle to the online marketplace.  </h1>
+		</div>
+	</section>
+	<div class="container">
+	<h2>List a car!</h2>
+	<div class="listingform" id="listingform">
+	<form action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" name="form" onSubmit="return validateText() && validateSelect()" id="form">
+	<p>Please enter the following information: (Note: fields marked with asterisk (*) are required.)</p>
+		<div>
+			<!-- Full name input -->
+			<label>Full Name*: </label>
+			<input type="text" id="fullname" placeholder="Enter Full Name"/><br>
+			<div class="error"></div>
+		</div>
+
+			<!-- Email input -->
+			<label>E-mail*:</label>
+			<input type="text" id="Email" placeholder="Enter Email"/><br>
+			<div class="error"></div>
+
+			<!-- Prev sub input -->
+		<label>How many cars have you previously submitted?</label><br>
+			<input type="radio" id="prevsub" value="0"/> 0 - 25
+			<input type="radio" id="prevsub" value="25"/> 25 - 50<br>
+			<input type="radio" id="prevsub" value="50"/> 50 - 75
+			<input type="radio" id="prevsub" value="75"/> 75 - 100<br>
+			<input type="radio" id="prevsub" value="100"/> 100+<br>
+
+
+			<label>Have you purchased a vehicle in the past 5 years?</label><br>
+			<INPUT TYPE="radio" NAME="1" VALUE="y">Yes </INPUT>
+			<INPUT TYPE="radio" NAME="1" VALUE="n">No </INPUT><br>
+
+			<label>Model: </label>	<input type="text" name="model" placeholder="Enter Car Model"/><br>
+			<!-- Category dropdown menu -->
+			<label>Category*:</label>
+			<select name = "dropdown" onchange="validateSelect()">
+			<option value = "select">Select</option>
+            <option value = "Luxury">Luxury</option>
+            <option value = "sport">Sport</option>
+            <option value = "family">Family</option>
+            <option value = "evs">Electric</option>
+            <option value = "Other">Other</option>
+         	</select><br>
+
+			<!-- Description input text box -->
+         	<label>Description:</label>
+         	<textarea name="Description" placeholder="Enter a breif description about your vehicle.">
+			</textarea><br>
+
+			<input type="checkbox" id="extras">
+			<label for="extras">Extras</label>
+			<input type="checkbox" id="coupon">
+			<label for="coupon">Jim's coupon codes allowed</label>
+			<label>Has the car been Rego'd in the last 6 months?</label><br>
+			<INPUT TYPE="radio" NAME="2" VALUE="y">Yes
+			<INPUT TYPE="radio" NAME="2" VALUE="n">No 
+			<br>
+			<!-- extra dropdown menu -->
+			<label>Drive:</label>
+			<select name = "dropdown">
+            <option value = "fourbie">4WD</option>
+            <option value = "sporty">2WD</option>
+            <option value = "fam">Other</option> <br>
+
+           <br> <label>Colour*:</label>
+			<input type="text" id="colour" placeholder="Enter Colour"/><br>
+            <br>
+			<br>
+	<br>
+			<input type="submit" name="submit" id="submit"/>
+
+	</form>
+	</div>
+	</div>
+	<!-- Copywrite footer -->
+	<footer id="main-footer">
+		<address>2021 &copy; All contents are copyright of Ebrahim Gulamali (c264525@uon.edu.au)</address>
+	</footer>
+</body>
+</html>
