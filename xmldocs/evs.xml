@@ -1,0 +1,85 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!-- evs.xml | Author: Ebrahim Gulamali (c3264525) Date created: 15/10/21 -->
+<?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+<?xml-stylesheet href="xslt.xsl" type="type/xsl"?>
+<!DOCTYPE Jimscars [
+<!ELEMENT Jimscars (Vehicle+)>
+<!ELEMENT Vehicle (category, model, description, cost, year, URL, make, pictures+, colour, enginesize, dealer, safteyrating, couponcode?, reviews+)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT URL (#PCDATA)>
+<!ELEMENT make (#PCDATA)>
+<!ELEMENT pictures (images)>
+<!ELEMENT images EMPTY>
+<!ATTLIST images src CDATA #REQUIRED>
+<!ATTLIST images height CDATA #REQUIRED>
+<!ATTLIST images width CDATA #REQUIRED>
+<!ELEMENT colour (#PCDATA)>
+<!ELEMENT enginesize (#PCDATA)>
+<!ELEMENT dealer (#PCDATA)>
+<!ELEMENT safteyrating (#PCDATA)>
+<!ELEMENT couponcode (#PCDATA)>
+<!ELEMENT reviews (#PCDATA)>
+<!ENTITY ev "Electric Vehicle">
+<!ENTITY L "Litres">
+]>
+<Jimscars>
+		<Vehicle>
+		<category>Electric</category>
+		<model>Tesla</model>
+		<description>The tesla roadster is a <abbr title="Battery Electric Vehicle">BEV's</abbr> sports car, based on the Lotus Elise chassis, that was produced by the electric car firm Tesla Motors in California from 2008 to 2012. The Roadster was the first highway legal serial production all-electric car to use lithium-ion battery cells and the first production all-electric car to travel more than 320 kilometres per charge.</description>
+		<cost>$200000</cost>
+		<year>2020</year>
+		<make>Roadster</make>
+		<pictures>
+			<images src="images/3.jpg" height="700" width="540"/>
+		</pictures>
+		<colour>Black</colour>
+		<enginesize>300</enginesize>
+		<URL>https://www.tesla.com/en_AU/roadster</URL>
+		<dealer>Elon Musk</dealer>
+		<safteyrating>4 Stars</safteyrating>
+		<couponcode></couponcode>
+		<reviews>Great! Superb! Fast! Excellent!</reviews>
+	</Vehicle>
+		<Vehicle>
+		<category>Electric</category>
+		<model>Tesla</model>
+		<description>With the lowest drag coefficient of any SUV, Model X is built for speed and range. Refined aerodynamic elements work together with new wheels and tires to help you travel farther, with sharper handling and better ride comfort.</description>
+		<cost>$120000</cost>
+		<year>2020</year>
+		<make>x</make>
+		<pictures>
+			<images src="images/8.jpg" height="700" width="540"/>
+		</pictures>
+		<colour>Red</colour>
+		<enginesize>350</enginesize>
+		<URL>https://www.tesla.com/en_au/modelx</URL>
+		<dealer>Elon Musk</dealer>
+		<safteyrating>4 Stars</safteyrating>
+		<couponcode></couponcode>
+		<reviews>Economiclly and eviromentally supirior.</reviews>
+	</Vehicle>
+		<Vehicle>
+		<category>Electric</category>
+		<model>Tesla</model>
+		<description>With the longest range and quickest acceleration of any electric vehicle in production, Model S Plaid is the highest performing sedan ever built. Both Long Range and Plaid powertrains, with updated battery architecture, are capable of back-to-back, consistent 1/4 mile runs.</description>
+		<cost>$90000</cost>
+		<year>2020</year>
+		<make>S</make>
+		<pictures>
+			<images src="images/5.jpg" height="700" width="540"/>
+		</pictures>
+		<colour>Blue</colour>
+		<enginesize>400</enginesize>
+		<URL>https://www.tesla.com/en_au/models</URL>
+		<dealer>Elon Musk</dealer>
+		<safteyrating>4 Stars</safteyrating>
+		<couponcode>20OFF</couponcode>
+		<reviews>Love it!</reviews>
+	</Vehicle>
+</Jimscars>
+
